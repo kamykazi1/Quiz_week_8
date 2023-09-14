@@ -3,7 +3,7 @@ import sqlite3
 
 conn = sqlite3.connect('climate.db')
 cursor = conn.cursor()
-cursor.execute("SELECT year, temperature, co2 FROM climate.db")
+cursor.execute("SELECT year, temperature, co2 FROM ClimateData")
 
 years = []
 co2_d = []
